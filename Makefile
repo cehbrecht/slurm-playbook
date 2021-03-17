@@ -13,7 +13,7 @@ help:
 .PHONY: play
 play: roles
 	echo "Installing PyWPS application with Ansible [all tasks] ..."
-	ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -c local -i rook3.yml playbook.yml
+	ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -c local -i custom.yml playbook.yml
 
 
 .PHONY: clean
